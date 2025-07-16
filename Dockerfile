@@ -1,10 +1,8 @@
-# Usa uma imagem mínima, já que não precisa de servidor
-FROM alpine:latest
+# Use uma imagem base do Nginx
+FROM nginx:alpine
 
-# Define diretório de trabalho
-WORKDIR /app
-
-# Copia os arquivos estáticos para dentro do container
+# Copie os arquivos do site estático para o diretório padrão do Nginx
 COPY . .
 
-# Nada para expor nem rodar, já que o EasyPanel cuida disso
+# Exponha a porta 80, que é a porta padrão do Nginx
+EXPOSE 80
