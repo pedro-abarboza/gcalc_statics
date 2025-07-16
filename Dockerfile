@@ -5,4 +5,4 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copie os arquivos do site estático para o diretório padrão do Nginx
-COPY ./statics/ .
+COPY . .
