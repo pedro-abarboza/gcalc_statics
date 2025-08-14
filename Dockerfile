@@ -11,7 +11,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copia os arquivos estáticos (já coletados do Django)
-COPY static/ static/
+COPY public/ static/
 
 # Permite leitura para todos
 RUN chmod -R 755 static
