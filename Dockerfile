@@ -11,10 +11,10 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copia os arquivos estáticos (já coletados do Django)
-COPY public/ static/
+COPY public/ public/
 
 # Permite leitura para todos
-RUN chmod -R 755 static
+RUN chmod -R 755 public
 
 # Porta padrão
 EXPOSE 80
