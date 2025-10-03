@@ -14470,3 +14470,12 @@ label {
         left: -19px
     }
 }
+
+.btn-radius {
+    border-radius: 20px;
+}
+
+.dropdown-btn{
+    min-width: auto;
+    margin: -15px 0px 0px 30px!important;
+}
