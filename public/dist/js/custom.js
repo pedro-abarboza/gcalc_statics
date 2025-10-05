@@ -118,3 +118,13 @@ $(function () {
     }
   });
 });
+
+function convertDateFormat(dateString) {
+  if(dateString){
+    const parts = dateString.split('-'); // Splits into ["yyyy", "mm", "dd"]
+    const formattedDate = `${parts[2]}/${parts[1]}/${parts[0]}`; // Reassembles in dd/mm/yyyy
+    return formattedDate;
+  }else{
+    return ''
+  }
+}
