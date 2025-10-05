@@ -14473,9 +14473,11 @@ label {
 
 .btn-radius {
     border-radius: 20px;
+    padding: 2px 5px 1px 5px;
 }
 
 .dropdown-btn{
     min-width: auto;
-    margin: -15px 0px 0px 30px!important;
+    margin: 1px 0px 0px 0px!important;
+    padding: 10px;
 }
