@@ -5336,7 +5336,7 @@ textarea.form-control-lg {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #fff;
+    background-color: #ffffff54;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 2px;
@@ -5366,10 +5366,11 @@ textarea.form-control-lg {
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 0.75rem 1.2rem;
     border-bottom: 1px solid #e9ecef;
     border-top-left-radius: 1px;
-    border-top-right-radius: 1px
+    border-top-right-radius: 1px;
+    background-color: #ffffffd4;
 }
 
 .modal-header .btn-close {
@@ -5397,7 +5398,8 @@ textarea.form-control-lg {
     padding: 0.75rem;
     border-top: 1px solid #e9ecef;
     border-bottom-right-radius: 1px;
-    border-bottom-left-radius: 1px
+    border-bottom-left-radius: 1px;
+    background-color: #ffffffd4;
 }
 
 .modal-footer>* {
@@ -10992,7 +10994,8 @@ ul.list-style-none li a:hover {
 }
 
 .card {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .card .card-subtitle {
