@@ -588,17 +588,35 @@ progress {
     .container,.container-sm {
         max-width:540px
     }
+    .page-wrapper>.container-fluid{
+        padding: 10px 5px;
+    }
+    .card-body {
+        padding: 1.25em 0.40em;
+    }
 }
 
 @media (min-width: 768px) {
     .container,.container-md,.container-sm {
         max-width:720px
     }
+    .page-wrapper>.container-fluid{
+        padding: 20px;
+    }
+    .card-body {
+        padding: 1.25em 0.75em;
+    }
 }
 
 @media (min-width: 992px) {
     .container,.container-lg,.container-md,.container-sm {
         max-width:960px
+    }
+    .page-wrapper>.container-fluid{
+        padding: 20px 40px;
+    }
+    .card-body {
+        padding: 1.25em;
     }
 }
 
@@ -4234,11 +4252,6 @@ textarea.form-control-lg {
 
 .card>.card-header+.list-group,.card>.list-group+.card-footer {
     border-top: 0
-}
-
-.card-body {
-    flex: 1 1 auto;
-    padding: 1rem 1rem
 }
 
 .card-title {
@@ -10625,7 +10638,11 @@ html[dir=ltr] body .p-l-0 {
     position: relative
 }
 
-.page-wrapper>.container-fluid,.page-wrapper>.container-lg,.page-wrapper>.container-md,.page-wrapper>.container-sm,.page-wrapper>.container-xl,.page-wrapper>.container-xxl {
+.page-wrapper>.container-fluid{
+    min-height: calc(100vh - 180px)
+}
+
+.page-wrapper>.container-lg,.page-wrapper>.container-md,.page-wrapper>.container-sm,.page-wrapper>.container-xl,.page-wrapper>.container-xxl {
     padding: 20px;
     min-height: calc(100vh - 180px)
 }
@@ -11104,10 +11121,6 @@ ul.list-style-none li a:hover {
 
 .label-default {
     background-color: #f8f9fa
-}
-
-.card-body {
-    padding: 1.25rem
 }
 
 a {
