@@ -109,7 +109,7 @@ $(function () {
   //****************************
   $(".sidebartoggler").on("click", function () {
     $("#main-wrapper").toggleClass("mini-sidebar");
-    if ($("#main-wrapper").hasClass("mini-sidebar")) {
+    if ($("#main-wrapper").attr("data-sidebartype")=="full") {
       $(".sidebartoggler").prop("checked", !0);
       $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
     } else {
