@@ -163,6 +163,29 @@ a:hover { color: var(--accent-hover); }
 .main-wrapper.sidebar-collapsed { margin-left: 0; }
 .main-content { padding: 1.75rem; flex: 1; }
 
+/* ── Footer ───────────────────────────────────────────────────────── */
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  padding: .5rem 1.75rem;
+  border-top: 1px solid var(--border);
+}
+.footer-logo {
+  height: 40px;
+  width: auto;
+  opacity: .55;
+  transition: opacity .2s;
+}
+.footer-logo:hover { opacity: .85; }
+.footer-copy {
+  font-size: .72rem;
+  color: var(--text-muted);
+  letter-spacing: .02em;
+}
+
 /* ── Cards ────────────────────────────────────────────────────────── */
 .card {
   background: var(--bg-card);
